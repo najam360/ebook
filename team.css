@@ -118,36 +118,29 @@ body {
 
 .about-me {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers the content vertically in the column */
-  margin-top: 20px;
+  flex-direction: row-reverse; /* Change flex-direction to reverse the order of elements */
+  justify-content: space-between; /* Ensure equal spacing between elements */
+  align-items: center;
 }
 
 .about-me-text {
-  text-align: center; /* Centers the text inside the about-me-text div */
-  margin-bottom: 20px;
-}
-
-.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 45%; /* Adjust width as needed */
-  margin: 10px;
-}
-
-.image-description {
-  text-align: center;
-  color: #333;
-  font-size: 16px; /* Adjust font size as needed */
-  margin-top: 10px;
+  flex: 1; /* Make the text take up remaining space */
 }
 
 .about-me-images {
-  display: flex;
-  justify-content: space-around;
-  width: 65%;
-  flex-wrap: wrap;
+  flex: 1; /* Make the image take up remaining space */
+}
+
+.image-container {
+  text-align: center; /* Center-align the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.image-description {
+  text-align: center; /* Center-align the description */
 }
 
 .about-me-images img {
@@ -157,7 +150,7 @@ body {
 
 @media (max-width: 600px) {
   .image-container {
-    max-width: 35%; /* Full width on smaller screens */
+    max-width: 80%; /* Full width on smaller screens */
   }
 }
 
