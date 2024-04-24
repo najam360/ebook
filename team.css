@@ -66,6 +66,7 @@ body {
   margin: 20px 0;
 }
 
+
 .intro button {
   background-color: #5edaf0;
   color: #000;
@@ -82,7 +83,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 80px;
+  padding: auto;
 }
 
 .achievements .work {
@@ -90,7 +91,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 10px;
 }
 
 .achievements .work i {
@@ -216,3 +217,65 @@ body {
   color: #a1a1a1;
   padding: 10px 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .nav-items a {
+    padding: 15px 0;
+  }
+  
+  .logo {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .logo {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .bottom-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .bottom-links .links {
+    padding: 10px;
+  }
+  
+  .bottom-links .links span {
+    margin: 10px 0;
+  }
+  
+  .bottom-links .links a {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer .copy {
+    text-align: center;
+  }
+}
+
+
